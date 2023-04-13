@@ -8,6 +8,7 @@
   "scripts": {
     "run-ts": "ts-node --transpile-only",
     "start": "npm run-script run-ts -- src/main.ts",
+    "generateApiClient": "sh scripts/client-generator.sh",
     "typeCheck": "tsc --noEmit -p .",
     "lint:source-code": "eslint . --ext .ts --ext .js --ext .mjs --ext .cjs",
     "lint:source-code:fix": "npm run-script lint:source-code -- --fix",
